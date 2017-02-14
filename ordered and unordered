@@ -1,0 +1,44 @@
+2. Multiple Discs
+#In this scenario there are multiple discs in a set.
+
+2.1 Unordered Set
+
+<mets:fileGrp>  
+<mets:fileGrp USE="REFERENCE IMAGE">
+<mets:file ID="9876.1" MIMETYPE="application/octet-stream">
+</mets:file>
+
+<mets:file ID="9876.2" MIMETYPE="application/octet-streamimage/jpeg">
+</mets:file>
+
+<mets:file ID="9876.3" MIMETYPE="application/octet-streamimage/jpeg">
+</mets:file>
+
+<mets:file ID="9876.4" MIMETYPE="application/octet-stream">
+</mets:file>
+</mets:fileGrp>
+
+
+2.2. Multiple Discs-Ordered set
+
+
+<mets:fileGrp USE="REFERENCE IMAGE">
+<mets:file ID="5432.1" MIMETYPE="application/octet-stream" GROUPID="barcode.1">
+  <mets:div ORDER=1 LABEL="barcode.disc 1">
+  </mets:div>
+</mets:file>
+
+<mets:file ID="5432.2" MIMETYPE="application/octet-streamimage/jpeg">
+  <mets:div ORDER=2 LABEL="barcode.disc 2">
+    </mets:div>"
+</mets:file>
+
+<mets:file ID="5432.3" MIMETYPE="application/octet-streamimage/jpeg">
+  <mets:div ORDER= 3LABEL="barcode.disc 3">
+    </mets:div>"
+</mets:file>
+
+<mets:file ID="5432.4" MIMETYPE="application/octet-streamimage/jpeg">
+  <mets:div ORDER=4 LABEL="barcode.disc 4">
+    </mets:div>"
+</mets:file>
